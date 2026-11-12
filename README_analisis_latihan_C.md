@@ -1,9 +1,4 @@
-# Analisis Latihan C – Data Penjualan Nusantara Mart
-
-## Sumber dan gambaran data
-Analisis ini dibuat berdasarkan file CSV `penjualan_nusantaramart - penjualan_nusantaramart(1).csv` yang disertakan bersama kode. Dataset terdiri dari **220 transaksi** dan **10 kolom**. Seluruh kolom memiliki 220 data terisi, sehingga tidak ditemukan missing value. Tidak ditemukan pula baris duplikat.
-
-> Catatan: angka penjualan di bawah merupakan hasil pengolahan dataset yang diberikan. Kemungkinan penyebab suatu pola (misalnya promosi atau pembelian reseller) tidak dapat dipastikan karena dataset tidak memuat informasi tentang promosi maupun identitas tipe pembeli.
+# Analisis Latihan C 
 
 ## Analisis Latihan 1 – Eksplorasi Data & Statistika Deskriptif
 
@@ -42,22 +37,3 @@ Berdasarkan boxplot jumlah pembelian per kategori dan aturan IQR, potensi outlie
 Dashboard menggabungkan empat grafik dalam satu tampilan sehingga manajer dapat membandingkan beberapa aspek bisnis secara bersamaan. Bar chart menunjukkan kategori penyumbang penjualan, line chart memperlihatkan perubahan penjualan bulanan, histogram merangkum rating pelanggan, dan boxplot memperlihatkan sebaran jumlah pembelian serta potensi outlier. Penyajian ini memudahkan pembaca melihat keterkaitan antartemuan tanpa berpindah-pindah grafik.
 
 Sebagai manajer Nusantara Mart, keputusan yang dapat dipertimbangkan adalah menjaga stok Fashion dan Elektronik, meninjau strategi kategori Makanan & Minuman, serta menelusuri penyebab penurunan penjualan pada Juni 2026. Perusahaan juga dapat mempertahankan hal-hal yang mendukung kepuasan pelanggan karena mayoritas rating berada pada angka 4–5. Transaksi dengan jumlah pembelian yang menjadi outlier sebaiknya diperiksa untuk memastikan kebutuhan stok dan pola pemesanan. Keputusan akhir perlu didukung data tambahan, seperti catatan promosi, stok, dan tipe pelanggan.
-
----
-
-## Cara menjalankan kode
-1. Simpan keenam file `.py` dan file CSV dalam satu folder.
-2. Pastikan nama file CSV sama dengan nama yang dipakai pada variabel `DATA_FILE` di setiap kode. Jika nama file CSV di perangkatmu berbeda, ubah nilai `DATA_FILE` pada tiap file.
-3. Instal library yang diperlukan melalui terminal:
-
-```bash
-python -m pip install pandas matplotlib seaborn
-```
-
-4. Jalankan file latihan yang ingin dikerjakan, misalnya:
-
-```bash
-python latihan_1_eksplorasi_statistika.py
-```
-
-Setiap file Python berdiri sendiri dan memuat dataset secara mandiri.
